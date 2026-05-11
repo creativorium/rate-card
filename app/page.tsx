@@ -9,7 +9,7 @@ const tiers = [
   {
     id: 'minor',
     name: 'Minor',
-    price: 'Rp 110k',
+    price: 'Rp 150k',
     unit: '/hour',
     description: 'For Minor UI tweaks and minor integrations & updates that does not consume much resources or creating a layers of complexity code',
     features: [
