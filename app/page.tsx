@@ -251,17 +251,48 @@ export default function Home() {
           ))}
         </div>
 
+        {/* Working Arrangement Note */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="border-t border-gray-800 pt-12 mt-12"
+        >
+          <div className="bg-gray-900/30 border border-gray-800 rounded-xl p-8">
+            <h3 className="text-lg font-semibold text-amber-500 mb-4">📝 Work Arrangement</h3>
+            <ul className="space-y-3 text-gray-300 text-sm md:text-base">
+              <li className="flex gap-3">
+                <span className="text-amber-500 flex-shrink-0">•</span>
+                <span><strong>Flexible Timeline:</strong> Project timelines and deadlines are always discussed upfront based on scope and your needs</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-amber-500 flex-shrink-0">•</span>
+                <span><strong>Freelance Basis:</strong> I work on a freelance basis — no fixed 9–5, so I'm often available outside standard office hours</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-amber-500 flex-shrink-0">•</span>
+                <span><strong>Working Hours:</strong> I'm based in GMT+8 (UTC +8) and typically work evenings and outside of standard business hours</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-amber-500 flex-shrink-0">•</span>
+                <span><strong>Weekend Work:</strong> Available on weekends but limited to night hours only</span>
+              </li>
+            </ul>
+          </div>
+        </motion.div>
+
         {/* Footer */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-20 text-center"
+          className="mt-20 text-center mb-16"
         >
           <p className="text-gray-400">
             Not sure which tier? <span className="text-amber-500 font-semibold">Chat via WhatsApp</span>
           </p>
         </motion.div>
+        
       </div>
     </main>
   )
