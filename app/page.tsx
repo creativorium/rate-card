@@ -53,6 +53,8 @@ const tiers = [
   },
 ]
 
+const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '6289123456789'
+
 export default function Home() {
   const [selectedTier, setSelectedTier] = useState<string>('major')
   const [expandedMobile, setExpandedMobile] = useState<string>('major')
@@ -152,7 +154,7 @@ export default function Home() {
                   <motion.a
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    href={`https://wa.me/?text=Hi%2C%20I%27m%20interested%20in%20your%20${tier.name}%20tier%20service`}
+                    href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%27m%20interested%20in%20your%20${tier.name}%20tier%20service`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full bg-amber-500 text-black font-bold py-4 rounded-lg hover:bg-amber-400 transition-all text-center"
@@ -234,7 +236,7 @@ export default function Home() {
                       <motion.a
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        href={`https://wa.me/?text=Hi%2C%20I%27m%20interested%20in%20your%20${tier.name}%20tier%20service`}
+                        href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%27m%20interested%20in%20your%20${tier.name}%20tier%20service`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block w-full bg-amber-500 text-black font-bold py-3 rounded-lg hover:bg-amber-400 transition-all text-center"
