@@ -25,7 +25,7 @@ const tiers = [
     name: 'Major',
     price: 'Rp 250k',
     unit: '/hour',
-    description: 'For adding new pages, add new feature development, security updates and much more complex integrations thar requires more resources to be done, but still not a full custom build',
+    description: 'For adding new pages, add new feature development, security updates and much more complex integrations that requires more resources to be done, but still not a full custom build',
     features: [
       'New page creation',
       'Feature development',
@@ -289,7 +289,7 @@ export default function Home() {
           className="mt-20 text-center mb-16"
         >
           <p className="text-gray-400">
-            Not sure which tier? <span className="text-amber-500 font-semibold">Chat via WhatsApp</span>
+            Not sure which tier? <span className="text-amber-500 font-semibold"><a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%27m%20interested%20in%20your%20web%20services`} target="_blank" rel="noopener noreferrer">Chat via WhatsApp</a></span>
           </p>
         </motion.div>
         
