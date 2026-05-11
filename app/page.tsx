@@ -23,7 +23,7 @@ const tiers = [
   {
     id: 'major',
     name: 'Major',
-    price: 'Rp 175k',
+    price: 'Rp 250k',
     unit: '/hour',
     description: 'For adding new pages, add new feature development, security updates and much more complex integrations thar requires more resources to be done, but still not a full custom build',
     features: [
